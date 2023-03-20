@@ -9,31 +9,35 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack{
+        VStack(spacing: 15){
             Image("habit-chain-logo")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
             Image("chain-cartoon")
                 .aspectRatio(contentMode: .fit)
-                .padding(.bottom, 50.0)
+                .padding(.bottom, 20.0)
+        
+            // HStacks hold two columns of buttons 
+            HStack(spacing: 50){
+                HabitButton(habit: "Drink Water", icon: "💧", backgroundColor: .green, textColor: .white)
+                HabitButton(habit: "Drink Water", icon: "💧", backgroundColor: .green, textColor: .white)
+            }
             
             HStack(spacing: 50){
-                HabitButton(habit: "Drink Water", backgroundColor: .green, textColor: .white)
-                HabitButton(habit: "Drink Water", backgroundColor: .green, textColor: .white)
+                HabitButton(habit: "Drink Water", icon: "💧", backgroundColor: .green, textColor: .white)
+                HabitButton(habit: "Drink Water", icon: "💧", backgroundColor: .green, textColor: .white)
             }
-            .padding()
-            HStack(spacing: 50){
-                HabitButton(habit: "Drink Water", backgroundColor: .green, textColor: .white)
-                HabitButton(habit: "Drink Water", backgroundColor: .green, textColor: .white)
-            }
-            .padding()
+            
             
             HStack(spacing: 50){
-                HabitButton(habit: "Drink Water", backgroundColor: .green, textColor: .white)
-                HabitButton(habit: "Drink Water", backgroundColor: .green, textColor: .white)
+                HabitButton(habit: "Drink Water", icon: "💧", backgroundColor: .green, textColor: .white)
+                    .padding(0)
+                HabitButton(habit: "Drink Water", icon: "💧", backgroundColor: .green, textColor: .white)
             }
-            .padding()
+            
+            Spacer() // Removes white space and pushes content to fill the entire screen
         }
+        .background(Color(.systemGray2).edgesIgnoringSafeArea(.all)) // Setting the app's background
     }
 }
 
