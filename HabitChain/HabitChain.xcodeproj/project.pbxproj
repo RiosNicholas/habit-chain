@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C01D8F2C29C903C600256F99 /* HabitButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01D8F2B29C903C600256F99 /* HabitButton.swift */; };
+		C01D8F2E29C9050900256F99 /* ButtonColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01D8F2D29C9050900256F99 /* ButtonColor.swift */; };
+		C01D8F3229C9094D00256F99 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01D8F3129C9094D00256F99 /* DataModel.swift */; };
 		C0D701B929C90342002E0CC7 /* HabitChainApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D701B829C90342002E0CC7 /* HabitChainApp.swift */; };
 		C0D701BB29C90342002E0CC7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D701BA29C90342002E0CC7 /* ContentView.swift */; };
 		C0D701BD29C90342002E0CC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0D701BC29C90342002E0CC7 /* Assets.xcassets */; };
@@ -14,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C01D8F2B29C903C600256F99 /* HabitButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitButton.swift; sourceTree = "<group>"; };
+		C01D8F2D29C9050900256F99 /* ButtonColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonColor.swift; sourceTree = "<group>"; };
+		C01D8F3129C9094D00256F99 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		C0D701B529C90342002E0CC7 /* HabitChain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HabitChain.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0D701B829C90342002E0CC7 /* HabitChainApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitChainApp.swift; sourceTree = "<group>"; };
 		C0D701BA29C90342002E0CC7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,6 +59,9 @@
 			children = (
 				C0D701B829C90342002E0CC7 /* HabitChainApp.swift */,
 				C0D701BA29C90342002E0CC7 /* ContentView.swift */,
+				C01D8F3129C9094D00256F99 /* DataModel.swift */,
+				C01D8F2B29C903C600256F99 /* HabitButton.swift */,
+				C01D8F2D29C9050900256F99 /* ButtonColor.swift */,
 				C0D701BC29C90342002E0CC7 /* Assets.xcassets */,
 				C0D701BE29C90342002E0CC7 /* Preview Content */,
 			);
@@ -137,8 +146,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C01D8F3229C9094D00256F99 /* DataModel.swift in Sources */,
+				C01D8F2C29C903C600256F99 /* HabitButton.swift in Sources */,
 				C0D701BB29C90342002E0CC7 /* ContentView.swift in Sources */,
 				C0D701B929C90342002E0CC7 /* HabitChainApp.swift in Sources */,
+				C01D8F2E29C9050900256F99 /* ButtonColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
