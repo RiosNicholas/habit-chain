@@ -14,4 +14,4 @@
 </p>
 
 ## Mockup
-<img src="mockups/habit-chain-original-mockup.png" height="50%">
+<img width="300" src="mockups/habit-chain-original-mockup.png" alt="Habit Chain's App Mockup">
