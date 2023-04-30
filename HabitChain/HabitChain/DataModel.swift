@@ -16,7 +16,7 @@ struct HabitData: Hashable {
         return goodHabit ? Color.white : Color.black
     }
     var gradientColor: [Color] {
-        return goodHabit ? [.green] : [.red]
+        return goodHabit ? [.green, .white] : [.red, .white]
     }
 }
 

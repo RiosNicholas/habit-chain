@@ -16,8 +16,6 @@ struct HabitButton: View {
     var textColor: Color
     var gradientColor: [Color]
     
-    
-    
     var body: some View {
         Button(action: {
             // Clicking the button will increment the habit chain

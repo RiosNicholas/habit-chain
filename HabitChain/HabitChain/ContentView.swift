@@ -17,35 +17,20 @@ struct ContentView: View {
                 .aspectRatio(contentMode: .fit)
                 .padding(.bottom, 20.0)
         
-            // HStacks hold two columns of buttons 
-            
-             HStack(spacing: 0){
-                HabitButton(habit: "Late Bedtime", emoji: "😴", goodHabit: false, textColor: .black, gradientColor: [.red, .white])
-                
-                HabitButton(habit: "Sugary Foods", emoji: "🍩", goodHabit: false, textColor: .black, gradientColor: [.red, .white])
-                //HabitButton(habit: "Drink Water", icon: "💧", backgroundColor: .green, textColor: .white)
-            }
-            
-            
-            HStack(spacing: 0){
-                HabitButton(habit: "Reading", emoji: "📖", goodHabit: true, textColor: .white, gradientColor: [.green, .white])
-                HabitButton(habit: "Journaling", emoji: "📝", goodHabit: false, textColor: .white, gradientColor: [.green, .white])
-            }
-            
-            
-            HStack(spacing: 0){
-                HabitButton(habit: "Stretching", emoji: "🙆‍♂️", goodHabit: true, textColor: .white, gradientColor: [.green, .white])
-                HabitButton(habit: "Exercise", emoji: "🏋️", goodHabit: true, textColor: .white, gradientColor: [.green, .white])
-            }
-            /*
             
              //I give up on this for now, but I would have wanted to use a datamodel to input my data
-             List {
-                ForEach(DataModel.habits, id: \.self) { habitData in
-                    HabitButton(habit: habitData.habit, emoji: habitData.emoji, goodHabit: habitData.goodHabit, textColor: habitData.textColor, gradientColor: habitData.gradientColor)
+            VStack(spacing: 20) {
+                ForEach(0..<DataModel.habits.count/2, id: \.self) { index in
+                    HStack(spacing: 20) {
+                        let firstIndex = index * 2
+                        let secondIndex = firstIndex + 1
+                        HabitButton(habit: DataModel.habits[firstIndex].habit, emoji: DataModel.habits[firstIndex].emoji, goodHabit: DataModel.habits[firstIndex].goodHabit, textColor: DataModel.habits[firstIndex].textColor, gradientColor: DataModel.habits[firstIndex].gradientColor)
+                        HabitButton(habit: DataModel.habits[secondIndex].habit, emoji: DataModel.habits[secondIndex].emoji, goodHabit: DataModel.habits[secondIndex].goodHabit, textColor: DataModel.habits[secondIndex].textColor, gradientColor: DataModel.habits[secondIndex].gradientColor)
+                    }
                 }
             }
-             */
+
+
             Spacer() // Removes white space and pushes content to fill the entire screen
         }
         .background(Color(.systemGray2).edgesIgnoringSafeArea(.all)) // Setting the app's background
