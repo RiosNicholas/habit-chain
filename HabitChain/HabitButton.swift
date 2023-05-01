@@ -64,7 +64,7 @@ struct HabitButton: View {
                 chainNum = 0
             }
         }
-        .frame(width: 150, height: 100) // Fixed size for the ZStack
+        .frame(width: 150, height: 100) // Creating a fixed size for the buttons in the ContentView ZStack
     }
 }
 
