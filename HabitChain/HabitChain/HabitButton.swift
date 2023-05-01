@@ -30,7 +30,7 @@ struct HabitButton: View {
                             .lineLimit(1)
                         Text("\(habit)")
                             .font(.body)
-                            .fontWeight(.light)
+                            .fontWeight(.medium)
                             .minimumScaleFactor(0.5)
                             .lineLimit(1)
                     }
