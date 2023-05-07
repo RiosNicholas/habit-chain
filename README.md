@@ -19,3 +19,7 @@
 </div>
 
 ## Demo
+<div align="center">
+  <img width="300" src="mockups/habit-chain-demo.gif" alt="Walkthrough of an App Demo">
+  <img width="300" src="mockups/habit-chain-demo.png" alt="Screenshot of an App Demo">
+</div>
