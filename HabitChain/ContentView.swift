@@ -24,6 +24,8 @@ struct ContentView: View {
             // Displaying the HabitChain logo
             Image("habit-chain-logo")
                 .resizable()
+                .scaledToFit()
+                .frame(minWidth: 150, minHeight: 150)
                 .aspectRatio(contentMode: .fit)
             
             // Displaying the image of a chain below the logo
@@ -33,6 +35,7 @@ struct ContentView: View {
             
             // Displaying the habit buttons in an adaptive grid layout
             LazyVGrid(columns: adaptiveColumns, spacing: 20) {
+                // Iterating through array of habit objects 
                 ForEach(DataModel.habits, id: \.self) { habitData in
                     ZStack {
                         HabitButton(habit: habitData.habit, emoji: habitData.emoji, goodHabit: habitData.goodHabit, textColor: habitData.textColor, gradientColor: habitData.gradientColor)
